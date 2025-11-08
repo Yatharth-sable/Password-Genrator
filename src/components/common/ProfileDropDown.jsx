@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import cute from "../../Assets/cute.svg";
 import { AiOutlineCaretDown } from "react-icons/ai";
 import { VscSignOut } from "react-icons/vsc";
 import { useDispatch, useSelector } from "react-redux";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { logout } from "../../services/auth";
 
 const ProfileDropDown = () => {

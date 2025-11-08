@@ -17,7 +17,7 @@ const {
   RESETPASSWORD_API,
 } = endPoints;
 
-const { INSERTDATA, GETDATA, UPDATEDATA, DELETEDATA } = profileEndPoints;
+const { INSERTDATA, GETDATA,  DELETEDATA } = profileEndPoints;
 
 // 
 

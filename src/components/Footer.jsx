@@ -1,5 +1,4 @@
-import React from 'react'
-import love from "../Assets/heart.png"
+
 
 const Footer = () => {
   return (

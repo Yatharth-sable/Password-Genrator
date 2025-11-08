@@ -1,18 +1,16 @@
-import React, { useState } from 'react'
 import { motion } from "framer-motion";
-import { Outlet } from 'react-router-dom';
 import About from './AboutPage';
 import Contact from './ContactusPage';
 import { useSelector } from 'react-redux';
 
 const Homepage = () => {
 
-  const scrollToSection = (id) => {
-  const element = document.getElementById(id);
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
-  }
-};
+//   const scrollToSection = (id) => {
+//   const element = document.getElementById(id);
+//   if (element) {
+//     element.scrollIntoView({ behavior: "smooth" });
+//   }
+// };
 
 const {token} = useSelector((state) => state.auth)
 

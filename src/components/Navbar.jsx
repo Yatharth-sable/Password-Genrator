@@ -1,5 +1,3 @@
-import React from "react";
-import github from "../Assets/github.svg";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import ProfileDropDown from "./common/ProfileDropDown";

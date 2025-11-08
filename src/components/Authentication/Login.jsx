@@ -1,7 +1,7 @@
 import  { useState } from "react";
 import { BiHide, BiShow } from "react-icons/bi";
 import cute from "../../Assets/cute.svg";
-import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { login } from "../../services/auth";
 
@@ -22,13 +22,10 @@ const Login = () => {
   const submitHandler = (e) => {
 
     e.preventDefault();
-     const data = formData
      dispatch(login(formData.email,formData.password,navigate))
      setFormData({email:"",password:"",})
   }
 
-  const location = useLocation()
-  
   return (
     <div>
       <div className="min-w-fit bg-[#f4ebe1]  min-h-screen relative  ">
