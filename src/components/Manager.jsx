@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import eye from "../Assets/eye.png";
 import eyeCross from "../Assets/eyecross.png";
 import { ToastContainer, Bounce, toast } from "react-toastify";
@@ -75,18 +75,20 @@ const Manager = () => {
     }
   };
 
-  const getData = async (token) => {
-    dispatch(setLoading(true));
-    const response = await fetchData(token);
-    setPasswordArray(response || []);
-    setVisiblePasswords({});
-    dispatch(setLoading(false));
-  };
 
-  useEffect(() => {
-    if (token) getData(token);
-  }, [token]);
+const getData = useCallback(async (token) => {
+  dispatch(setLoading(true));
+  const response = await fetchData(token);
+  setPasswordArray(response || []);
+  setVisiblePasswords({});
+  dispatch(setLoading(false));
+}, [dispatch]);
 
+useEffect(() => {
+  if (token) {
+    getData(token);
+  }
+}, [token, getData]);
   // delete password
 
   const deletePassword = async (siteId) => {
