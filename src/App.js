@@ -1,7 +1,6 @@
 import "./App.css";
 import Login from "./components/Authentication/Login";
 import Signup from "./components/Authentication/Signup";
-import Footer from "./components/Footer";
 import Manager from "./components/Manager";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";

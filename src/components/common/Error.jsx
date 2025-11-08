@@ -1,4 +1,3 @@
-import React from "react";
 import cute from "../../Assets/cute.svg"; // 
 import { Link } from "react-router-dom";
 

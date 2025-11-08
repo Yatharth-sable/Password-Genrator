@@ -1,4 +1,4 @@
-import { Bounce, toast, ToastContainer } from "react-toastify";
+import { toast  } from "react-toastify";
 import { endPoints } from "./api.js";
 import { profileEndPoints } from "./api.js";
 import { apiConnector } from "./apiConnector.js";

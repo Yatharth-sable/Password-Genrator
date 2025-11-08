@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import cuteie from "../../Assets/file.svg";
+import  { useState } from "react";
 import { BiHide, BiShow } from "react-icons/bi";
 import cute from "../../Assets/cute.svg";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
