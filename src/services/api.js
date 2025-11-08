@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000/api/";
+const BASE_URL = "https://password-genrator-82m3.onrender.com/";
 
 export const endPoints = {
   SENDOTP_API: BASE_URL + "auth/sendotp",
