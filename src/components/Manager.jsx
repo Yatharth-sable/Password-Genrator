@@ -1,4 +1,4 @@
-import  { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import eye from "../Assets/eye.png";
 import eyeCross from "../Assets/eyecross.png";
 import { ToastContainer, Bounce, toast } from "react-toastify";
@@ -56,18 +56,14 @@ const Manager = () => {
       form.password.length >= 8
     ) {
       if (edit) {
-        {
-          window.confirm("Want update the Password") &&
-            (await updatesites(token, form, form._id));
-          setedit(false);
-        }
-
+        window.confirm("Want update the Password") &&
+          (await updatesites(token, form, form._id));
+        setedit(false);
       } else {
-        {
-          window.confirm("Want to save the Password") &&
-            (await dispatch(insertData(form, token)));
-        }
+        window.confirm("Want to save the Password") &&
+          (await dispatch(insertData(form, token)));
       }
+
       setForm({ site: "", username: "", password: "" });
       await getData(token);
     } else {
@@ -241,7 +237,7 @@ const Manager = () => {
                   onClick={generatePassword}
                   className="flex justify-center items-center  w-full sm:w-fit sm:self-end px-2 py-1 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-colors"
                 >
-                  Genreate Passoword
+                  Genrate Password
                 </motion.button>
 
                 <motion.button

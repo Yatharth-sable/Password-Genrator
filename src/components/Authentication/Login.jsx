@@ -1,7 +1,7 @@
 import  { useState } from "react";
 import { BiHide, BiShow } from "react-icons/bi";
 import cute from "../../Assets/cute.svg";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { login } from "../../services/auth";
 
